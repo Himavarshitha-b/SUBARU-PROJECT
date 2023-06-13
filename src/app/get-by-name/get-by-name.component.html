@@ -1,0 +1,17 @@
+<div class="dialog-container">
+  <div *ngIf="authorDetails" class="author-details">
+    <div class="close-icon" (click)="closeAuthorDetails()">&#10006;</div>
+    <p><strong>ID:</strong> {{ authorDetails?.id }}</p>
+    <p><strong>Name:</strong> {{ authorDetails?.name }}</p>
+    <p><strong>Age:</strong> {{ authorDetails?.age }}</p>
+    <p><strong>Birthdate:</strong> {{ authorDetails?.birthdate }}</p>
+    <p><strong>Nationality:</strong> {{ authorDetails?.nationality }}</p>
+    <p><strong>Year of Publication:</strong> {{ authorDetails?.yearOfPublication }}</p>
+    <p><strong>Year of Publication in Words:</strong> {{ authorDetails?.yearOfPublicationInWords }}</p>
+    <p><strong>Book Name:</strong> {{ authorDetails?.bookName }}</p>
+    <p><strong>Country ISO Code:</strong> {{ authorDetails?.countryIsoCode }}</p>
+    <div class="button-container">
+      <button id="close-button" (click)="closeAuthorDetails()">Close</button>
+    </div>
+  </div>
+</div>

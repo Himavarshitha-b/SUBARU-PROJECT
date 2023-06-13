@@ -1,0 +1,25 @@
+
+<table class="table table-striped" >
+    <thead>
+      <tr>
+        <th>ID State</th>
+        <th>State</th>
+        <th>ID Year</th>
+        <th>Year</th>
+        <th>Population</th>
+        <th>Slug State</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data">
+            <td>{{ item['ID State'] }}</td>
+            <td>{{ item['State'] }}</td>
+            <td>{{ item['ID Year'] }}</td>
+            <td>{{ item['Year'] }}</td>
+            <td>{{ item['Population'] }}</td>
+            <td>{{ item['Slug State'] }}</td>
+          </tr>
+      
+    </tbody>
+    
+  </table>

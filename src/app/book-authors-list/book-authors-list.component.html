@@ -1,0 +1,53 @@
+<h1>Book Authors List</h1>
+
+<div class="button-container">
+  <button class="btn btn-primary" (click)="exportToExcel()">Export to Excel</button>
+   <button class="btn btn-primary" (click)="exportToExcelFromJava()">Export to Excel From Java</button> 
+   <button class="btn btn-primary" (click)="download_CSV()">Download CSV File</button> 
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>age</th>
+      <th>Birthdate</th>
+      <th>Nationality</th>
+      <th>Year of Publication</th>
+      <th>Year of Publication in words</th>
+      <th>Book Name</th>
+      <!-- <th>countryIsoCode</th>  -->
+      <th>birthdateInEST</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let author of bookAuthors">
+      <td>{{ author.id }}</td>
+      <!-- <td>{{ author.name }}</td> -->
+      <!-- <td>
+        <a href="javascript:void(0)" (click)="openGetByNameDialog(author.name)">{{ author.name }}</a>
+      </td> -->
+      <td>
+        <a href="javascript:void(0)" (click)="openGetByNameDialog(author.name)" style="text-decoration: none">{{ author.name }}</a>
+      </td>
+      
+      <td>{{author.age}}</td>
+      <td>{{ author.birthdate }}</td>
+      <td>{{ author.nationality }}</td>
+      <td>{{ author.yearOfPublication }}</td>
+      <td>{{ author.yearOfPublicationInWords }}</td>
+      <td>{{ author.bookName }}</td>
+       <!-- <td>{{author.countryIsoCode}}</td> -->
+       <td>{{author.birthdateInEST}}</td>
+
+      
+      <td class="action">
+        <button class="btn btn-primary" (click)="openUpdateForm(author)">Edit</button>
+     <button (click)="deleteAuthor(author.id)">Delete</button></td> 
+      
+    </tr>
+  </tbody>
+</table>
+
+

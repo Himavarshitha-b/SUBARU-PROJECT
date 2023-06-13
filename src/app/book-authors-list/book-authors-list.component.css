@@ -1,0 +1,84 @@
+table {
+  border: 1px solid #e6dede;
+  border-collapse: end;
+  border-spacing: 10;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid rgb(14, 13, 13);
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #a09d9d;
+  font-weight: bold;
+  color: #080707;
+}
+
+tr:nth-child(even) {
+  background-color: #cbd0d1;
+}
+
+button.btn-primary {
+  background-color: #500bd0;
+  color: #ffffff;
+}
+
+button.btn-danger {
+  background-color: #a44650;
+  color: #b8aeae;
+}
+
+@media only screen and (max-width: 300px) {
+  table {
+    display: list-item;
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
+h1 {
+  font-size: 20px;
+}
+
+button {
+  background-color: rgb(186, 73, 73);
+  color: white;
+  border: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(31, 28, 28);
+}
+.author-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.author-link:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.button-container {
+  position: fixed;
+  top: 10%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.button-container button {
+  margin-right: 10px; /* Adjust the value to increase or decrease the space */
+}
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<section>
+  <mat-toolbar class="navbar" color="primary">
+    <div class="brand">
+      
+      <span>BookAuthor</span>
+      
+    </div>
+    <!--div class="navigation">
+      <a mat-button *ngIf="!loginService.isUserLoggedIn() && ( !router.url.includes('/login') || !router.url.includes('/register'))"
+       routerLink="/login" routerLinkActive="active"><mat-icon>login</mat-icon>Login</a>
+      <a mat-button *ngIf="loginService.isUserLoggedIn() && !router.url.includes('/bookauthor')" routerLink="/bookauthor" 
+      routerLinkActive="active"><mat-icon>person_add</mat-icon>Add Author</a>
+      <a mat-button *ngIf="loginService.isUserLoggedIn() && !router.url.includes('/book-authors-list')" routerLink="/book-authors-list" 
+      routerLinkActive="active"><mat-icon>list_alt</mat-icon>List</a>
+      <a mat-button *ngIf="loginService.isUserLoggedIn() && (!router.url.includes('/login') || !router.url.includes('/register') || !router.url.includes('/bookauthor') || !router.url.includes('/book-authors-list'))" routerLink="/logout" routerLinkActive="active"><mat-icon>logout</mat-icon>Logout</a>
+    </div-->
+    
+    <div class="navigation">
+      <!-- <a mat-button *ngIf="loginService.isUserLoggedIn()"
+       routerLink="/login" routerLinkActive="active"></a> -->
+      <button mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/bookauthor" 
+      routerLinkActive="active"><mat-icon>person_add</mat-icon>Add Author</button>
+      <button mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/book-authors-list" 
+      routerLinkActive="active"><mat-icon>list_alt</mat-icon>List</button>
+      <button mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/data" routerLinkActive="active">Data</button>
+      <button mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/dataCsv" routerLinkActive="active">DataCsvFile</button>
+       <button mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" routerLinkActive="active"><mat-icon>logout</mat-icon>Logout</button> 
+  
+      
+      
+    </div>
+  </mat-toolbar>
+</section>
